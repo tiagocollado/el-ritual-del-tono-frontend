@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎸 El Ritual del Tono | Frontend
 
-## Getting Started
+**El Ritual del Tono** es la plataforma definitiva para los guitarristas que buscan descubrir exactamente qué equipamiento utilizan sus ídolos para lograr ese sonido inconfundible. Desde el gear de leyendas internacionales hasta los arquitectos sónicos del rock nacional.
 
-First, run the development server:
+⚙️ **Repositorio del Backend:** [el-ritual-del-tono-backend](https://github.com/tiagocollado/el-ritual-del-tono-backend)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+> 💡 **Nota:** Este repositorio contiene únicamente el código del **Frontend**. La aplicación se alimenta de una API REST propia construida con Node, Express y MongoDB.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🚀 Stack Tecnológico (Frontend)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Framework:** [Next.js](https://nextjs.org/)
+* **Librería UI:** [React](https://react.dev/)
+* **Estilos:** Tailwind CSS
+* **Diseño UI/UX:** Diseñado desde cero para ofrecer una experiencia inmersiva y oscura ("Donde todo empieza").
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Funcionalidades Principales
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+La aplicación está diseñada para conectar la música con la tecnología, permitiendo a los usuarios navegar entre artistas y su equipamiento:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 👤 Base de Datos de Artistas
+Perfiles dedicados a leyendas de la guitarra con su biografía y estilo definido:
+* *Internacionales:* Jimi Hendrix, David Gilmour, Kurt Cobain, etc.
+* *Nacionales:* Skay Beilinson, Gustavo Cerati, Luis Alberto Spinetta, etc.
 
-## Deploy on Vercel
+### 🎛️ Catálogo de Equipamiento ("Gear")
+Un inventario completo y filtrable donde los usuarios pueden explorar el hardware que define el tono de sus héroes:
+* **Filtros Dinámicos:** Categorización por *Todos, Pedales, Guitarras, Amplificadores*.
+* **Fichas de Producto:** Detalles y precios de ítems icónicos como el *Electro-Harmonix Big Muff Pi*, *Vox V847 Wah* o la clásica *Fender Stratocaster*.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🛒 Interacción de Usuario
+* **Carrito de Compras:** Sistema funcional para ir agregando el equipamiento deseado, ver el resumen y gestionar los productos seleccionados.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🛠️ Instalación y Ejecución Local
+
+Para ejecutar el frontend en tu entorno de desarrollo, es necesario que también tengas corriendo el [servidor backend](https://github.com/tiagocollado/el-ritual-del-tono-backend) para que la base de datos responda correctamente.
+
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone [URL_DE_ESTE_REPOSITORIO]
+    ```
+
+2.  **Navegar al directorio:**
+    ```bash
+    cd el-ritual-del-tono-frontend
+    ```
+
+3.  **Instalar las dependencias:**
+    ```bash
+    npm install
+    ```
+
+4.  **Configurar Variables de Entorno:**
+    Crear un archivo `.env.local` en la raíz del proyecto para conectar con la API local:
+    ```env
+    NEXT_PUBLIC_API_URL=http://localhost:PUERTO_DEL_BACKEND/api
+    ```
+
+5.  **Iniciar el servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
+
+6.  **Visualizar:**
+    Abrir [http://localhost:3000](http://localhost:3000) en el navegador para comenzar a explorar.
+
+---
+*Diseñado y desarrollado por **Tiago Collado**.*
